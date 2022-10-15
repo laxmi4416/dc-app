@@ -3,6 +3,9 @@ package com.example.demo.service;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.example.demo.binding.DcEducation;
+import com.example.demo.binding.DcIncome;
+import com.example.demo.binding.DcKids;
 import com.example.demo.entity.Plan;
 import com.example.demo.response.DcEducationResponse;
 import com.example.demo.response.DcIncomeResponse;
@@ -16,11 +19,11 @@ public interface DcAppService {
 
 	public void planSelection(int caseNumber, String planName);
 
-	public void incomeDetails(int caseNumber, double monthSalaryIncome, double rentIncome, double propertyIncome);
+	public void incomeDetails(int caseNumber, DcIncome dcIncome);
 
-	public void educationDetails(int caseNumber, String highstDegree, LocalDate graduationYear, String universityName);
+	public void educationDetails(int caseNumber, DcEducation dcEducation);
 
-	public void addKidDetails(int caseNumber, String kidName, int kidAge, Long kidSSN);
+	public void addKidDetails(int caseNumber, DcKids dcKids);
 
 	public List<DcIncomeResponse> dcIncomeDetails();
 

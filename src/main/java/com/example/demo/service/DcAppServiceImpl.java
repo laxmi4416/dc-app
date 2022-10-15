@@ -3,6 +3,9 @@ package com.example.demo.service;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.example.demo.binding.DcEducation;
+import com.example.demo.binding.DcIncome;
+import com.example.demo.binding.DcKids;
 import com.example.demo.entity.Plan;
 import com.example.demo.response.DcEducationResponse;
 import com.example.demo.response.DcIncomeResponse;
@@ -25,25 +28,7 @@ public class DcAppServiceImpl implements DcAppService {
 	@Override
 	public void planSelection(int caseNumber, String planName) {
 		// TODO Auto-generated method stub
-		
-	}
 
-	@Override
-	public void incomeDetails(int caseNumber, double monthSalaryIncome, double rentIncome, double propertyIncome) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void educationDetails(int caseNum, String HighstDegree, LocalDate graduationYear, String universityName) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void addKidDetails(int caseNum, String kidName, int kidAge, Long kidSSN) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -64,5 +49,22 @@ public class DcAppServiceImpl implements DcAppService {
 		return null;
 	}
 
+	@Override
+	public void incomeDetails(int caseNumber, DcIncome dcIncome) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void educationDetails(int caseNumber, DcEducation dcEducation) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void addKidDetails(int caseNumber, DcKids dcKids) {
+		// TODO Auto-generated method stub
+
+	}
 
 }
