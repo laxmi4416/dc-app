@@ -23,7 +23,7 @@ public interface DcAppService {
 
 	public void educationDetails(int caseNumber, DcEducation dcEducation);
 
-	public void addKidDetails(int caseNumber, DcKids dcKids);
+	public List<DcKids> addKidDetails(int caseNumber, DcKids dcKids);
 
 	public List<DcIncomeResponse> dcIncomeDetails();
 
